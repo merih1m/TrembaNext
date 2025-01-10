@@ -1,0 +1,34 @@
+{
+  "Header": {
+    "welcome_message": "Welcome to our application!",
+    "nav_support": "Support",
+    "nav_fundraisers": "Fundraisers",
+    "nav_social": "Social",
+    "nav_merch": "Merch",
+    "nav_cart": "Cart",
+    "nav_logout": "Logout"
+  },
+  "HomePage": {
+    "title": "Welcome to our Home Page",
+    "about": "Learn more about our application",
+    "sign-in": "sign-in"
+  },
+  "Merch": {
+    "Cart": {
+      "title": "Apple watch",
+      "Add to cart":"Додати до кошику"
+    }
+  },
+  "Support": {
+    "Support": "Support"
+  },
+  "Fundraisers": {
+    "Fundraisers": "Fundraisers"
+  },
+  "Social": {
+    "Social": "Social"
+  },
+  "About": {
+   "about": "text"
+  }
+}

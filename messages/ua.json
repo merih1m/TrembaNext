@@ -1,0 +1,31 @@
+{
+
+  "Header": {
+    "welcome_message": "Ласкаво просимо до нашого додатку!",
+    "nav_support": "Підтримка",
+    "nav_fundraisers": "Збори коштів",
+    "nav_social": "Соц Мережі",
+    "nav_merch": "Мерч",
+    "nav_cart": "Корзина",
+    "nav_logout": "Вийти"
+  },
+  "HomePage": {
+    "title": "Головна сторінка",
+    "about": "Дізнайтеся більше про наш додаток"
+  },
+  "Merch": {
+    "Merch": "Мерч"
+  },
+  "Support": {
+    "Support": "Підтримка"
+  },
+  "Fundraisers": {
+    "Fundraisers": "Збори коштів"
+  },
+  "Social": {
+    "Social": "Соц Мережі"
+  },
+  "About": {
+    "about": "текст"
+  }
+}
