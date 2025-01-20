@@ -1,4 +1,5 @@
 import { logout } from "../../../../../action/auth";
+import { signOut } from "next-auth/react";
 export enum Link {
   SUPPORT = "/support",
   FUNDRAISERS = "/fundraisers",
@@ -23,5 +24,5 @@ export const navLinks = [
   { text: Text.FUNDRAISERS, link: Link.FUNDRAISERS },
   { text: Text.SOCIAL, link: Link.SOCIAL },
   { text: Text.CART, link: Link.CART },
-  { text: Text.LOGOUT, link: Link.LOGOUT, onClick: logout },
+  { text: Text.LOGOUT, link: Link.LOGOUT, onClick: signOut },
 ];

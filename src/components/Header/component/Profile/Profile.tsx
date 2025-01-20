@@ -9,30 +9,31 @@ export default function Profile() {
   const [modalState, setModalState] = useState(false);
   const { data: session, status } = useSession();
 
-  const profileImg = useMemo(() => {
+  const profileData = useMemo(() => {
     if (status === "authenticated") {
-      // @ts-ignore
-      return session?.user?.image || defaultUserIcon;
+      return {
+        profileImg: session?.user?.image || defaultUserIcon,
+        username: session?.user?.name || "User",
+      };
     }
-    return defaultUserIcon;
-  }, [session, status]);
-
-  const username = useMemo(() => {
-    if (status === "authenticated") {
-      // @ts-ignore
-      return session?.user?.name || "nickname";
-    }
-    return "nickname";
+    return {
+      profileImg: defaultUserIcon,
+      username: "Guest",
+    };
   }, [session, status]);
 
   return (
     <div className="profile" onClick={() => setModalState(true)}>
-      <img src={profileImg} alt="user" className="w-12 h-12 rounded-full" />
+      <img
+        src={profileData.profileImg}
+        alt="user"
+        className="w-12 h-12 rounded-full"
+      />
       <div className="circle"></div>
       {modalState && (
         <ProfileModal
-          username={username}
-          profileImg={profileImg}
+          username={profileData.username}
+          profileImg={profileData.profileImg}
           onDestroy={(event) => {
             event.stopPropagation();
             setModalState(false);

@@ -1,24 +1,8 @@
 "use client";
 import { FaGithub } from "react-icons/fa";
 import { login } from "../../../action/auth";
-import { useSession } from "next-auth/react";
 
 const LoginGithub = () => {
-  const { data: session, status } = useSession();
-
-  if (status === "loading") {
-    return <p>Loading...</p>;
-  }
-  if (session) {
-    return (
-      <div>
-        <img src={`${session?.user?.image}`} alt="user image" />
-        <p> {session?.user?.name} </p>
-        <p> {session?.user?.email} </p>
-      </div>
-    );
-  }
-
   return (
     <div
       onClick={() => login("github")}

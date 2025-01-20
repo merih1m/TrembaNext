@@ -30,5 +30,14 @@
   },
   "About": {
    "about": "text"
+  },
+  "NotFoundPage": {
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "title": "Looks like you've found the doorway to the great nothing",
+    "comeback": "Sorry about that! Please visit our hompage to get where you need to go."
+  },
+  "Error": {
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "title": "Something went wrong!"
   }
 }

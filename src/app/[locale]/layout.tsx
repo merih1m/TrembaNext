@@ -24,6 +24,7 @@ export default async function RootLayout({
 
   const messages = await getMessages();
   const session = await auth();
+
   return (
     <html lang="en">
       <body>

@@ -15,6 +15,10 @@ module.exports = {
       textShadow: {
         custom: "2px 2px 5px #610094", // створений клас
       },
+      backgroundImage: {
+        "custom-image":
+          "url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif')",
+      },
     },
   },
 };

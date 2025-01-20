@@ -9,6 +9,11 @@ export default function HomePage() {
     <div>
       <h1>{t("title")}</h1>
       <Link href="/about">{t("about")}</Link>
+      <div>
+        <Link className="text-link" href="/sign-in">
+          Sign-in
+        </Link>
+      </div>
     </div>
   );
 }

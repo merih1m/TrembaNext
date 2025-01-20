@@ -12,21 +12,20 @@ enum UserRole{
 }
 
 model User {
-  id            String          @id @default(auto()) @map("_id") @db.ObjectId
-  name          String?
-  email         String?         @unique
-  emailVerified DateTime?
-  image         String?
-  accounts      Account[]
-  sessions      Session[]
-  role          UserRole?      @default(User)
-  // Optional for WebAuthn support
-  Authenticator Authenticator[]
- 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id             String          @id @default(auto()) @map("_id") @db.ObjectId
+  name           String?
+  email          String?         @unique
+  emailVerified  DateTime?
+  image          String?
+  accounts       Account[]
+  sessions       Session[]
+  role           UserRole?      @default(User)
+  Authenticator  Authenticator[]
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 }
- 
+
+
 model Account {
   id                String  @id @default(auto()) @map("_id") @db.ObjectId
   userId            String  @db.ObjectId
@@ -40,7 +39,6 @@ model Account {
   scope             String?
   id_token          String? @db.String
   session_state     String?
- 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
  
