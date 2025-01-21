@@ -1,6 +1,6 @@
 "use client";
 import Nav from "@/components/Header/component/Nav/Nav";
-import { navLinks } from "../Header/component/Nav/navLinks";
+import { navLinks } from "./Header/component/Nav/navLinks";
 import { useState } from "react";
 
 export default function Burger({}: {}) {

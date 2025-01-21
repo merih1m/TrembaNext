@@ -7,7 +7,7 @@ import Logo from "./component/Logo/Logo";
 import Nav from "./component/Nav/Nav";
 import { navLinks } from "./component/Nav/navLinks";
 import Profile from "./component/Profile/Profile";
-import Burger from "@/components/Burger/Burger";
+import Burger from "@/components/Burger";
 import { usePathname } from "@/i18n/routing";
 
 export default function HeaderComponent() {
